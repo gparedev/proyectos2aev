@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnicerías ACME</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-image: url(superior.jpg), url(inferior.jpg);
+            background-position: center top, center bottom;
+            background-repeat: no-repeat;
+            position: relative;
+            background-attachment: scroll;
+        }
+
+        /* NAV */
+
+        header {
+            height: 300px;
+            width: 100vw;
+        }
+
+        .nav-small {
+            display: flex;
+            gap: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        .nav-small img {
+            object-fit: contain;
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        /* ARTICLE */
+
+        .nav-medium {
+            display: none;
+        }
+
+        article {
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        article {
+            max-width: 1000px;
+        }
+
+        .imagenes-servicios img {
+            margin: auto;
+            width: 100%;
+        }
+
+        .intro {
+            margin: 0 20px;
+        }
+
+        .imagenes-servicios {
+            margin: 0 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            padding-top: 30px;
+        }
+
+        h3 {
+            padding-top: 35px;
+        }
+
+        .imagenes-servicios {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .redes-sociales img {
+            width: 50px;
+            padding-top: 30px;
+        }
+
+        .redes-sociales {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* FORM */
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: grey;
+            padding: 40px;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        form .columna-form {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            font-weight: bold;
+        }
+
+        input[type='submit'] {
+            align-self: flex-end;
+            max-width: fit-content;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+
+        }
+
+        input[type='submit']:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid white;
+            box-shadow: 0px 2px 6px black;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+
+        footer {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            font-size: 10px;
+            margin-top: 100px;
+        }
+
+        .texto-footer-2 {
+            display: none;
+        }
+
+        /* MEDIANO */
+
+        @media screen and (min-width: 800px) {
+
+            .nav-small {
+                display: none;
+            }
+
+            .nav-medium {
+                display: block;
+                margin: 0 auto;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 70px;
+                margin-top: auto;
+                text-align: center;
+                background-color: black;
+                padding: 20px 0;
+                color: white;
+            }
+
+            li {
+                list-style: none;
+                display: inline;
+            }
+
+            .intro p {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .imagenes-servicios {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .fila-servicios {
+                display: flex;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .columna-servicios {
+                width: 50%;
+            }
+
+            .redes-sociales {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+            }
+
+            .redes-sociales img {
+                width: 75px;
+            }
+
+            .imagenes-servicios img {
+                margin: auto;
+                width: 90%;
+            }
+
+            .fila-form-grande-row {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .columna-form-grande-row {
+                width: 100%;
+            }
+
+            footer {
+                font-size: 1.1rem;
+            }
+
+            .texto-footer-1 {
+                margin-bottom: 2px;
+            }
+
+            .texto-footer-2 {
+                display: block;
+                margin-top: 2px;
+            }
+        }
+
+        /* GRANDE */
+
+        @media screen and (min-width: 1200px) {
+
+            .intro p {
+                width: 90%;
+            }
+
+            ul {
+                gap: 100px;
+            }
+
+            .imagenes-servicios {
+                display: flex;
+                flex-direction: row;
+                margin: 40px 0;
+            }
+
+            footer {
+                font-size: 1.2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 2px;
+                padding: 20px 0;
+            }
+
+            .texto-footer-1 {
+                margin-top: 2px;
+            }
+
+            .texto-footer-2 {
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <section class="nav-small">
+            <img src="burger-menu.png" alt="">
+            <p>Menú</p>
+        </section>
+        <section class="nav-medium">
+            <ul>
+                <li>INICIO</li>
+                <li>SERVICIOS</li>
+                <li>PRODUCTOS</li>
+                <li>TIENDAS</li>
+            </ul>
+        </section>
+    </header>
+
+
+    <article>
+        <section class="intro">
+            <h1>PRESENTACIÓN</h1>
+            <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados, entre
+                otras
+                delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos,
+                frescos y
+                sabrosos, contacten con nosotros.</p>
+            <h2>Reparto a domicilio</h2>
+            <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+            <h2>Corte tradicional</h2>
+            <p>No tenemos bandejas preparadas. Nuestro corte es artesano y profesional.</p>
+        </section>
+        <section>
+            <section class="imagenes-servicios">
+                <div class="fila-servicios">
+                    <div class="columna-servicios">
+                        <h3>Calidad</h3>
+                        <img src="carne.jpg" alt="">
+                        <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y
+                            sabor.
+                        </p>
+                    </div>
+                    <div class="columna-servicios">
+                        <h3>Servicio 24h</h3>
+                        <img src="entrega.jpg" alt="">
+                        <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros
+                            compromisos.
+                        </p>
+                    </div>
+                </div>
+                <div class="fila-servicios">
+                    <div class="columna-servicios">
+                        <h3>Restauración</h3>
+                        <img src="restaurantes.jpg" alt="">
+                        <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración
+                            llámanos.
+                        </p>
+                    </div>
+                    <div class="columna-servicios">
+                        <h3>Charcutería</h3>
+                        <img src="charcuteria.jpg" alt="">
+                        <p>Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistas en
+                            charcutería.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="redes-sociales">
+                <img src="facebook.png" alt="">
+                <img src="twitter.png" alt="">
+                <img src="location.png" alt="">
+            </section>
+        </section>
+        <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+            <div class="fila-form-grande-row">
+                <div class="fila columna-form-grande-row">
+                    <div class="columna-form">
+                        Email <input type="email" placeholder="Introduzca su email" name="email" required>
+                    </div>
+                </div>
+                <div class="fila columna-form-grande-row">
+                    <div class="columna-form">
+                        Teléfono <input type="number" placeholder="Introduzca su número de teléfono" name="telefono">
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna-form">
+                    Mensaje<br>
+                    <textarea name="mensaje" rows="4" name="mensaje" required></textarea><br>
+                </div>
+            </div>
+            <input type="submit">
+        </form>
+    </article>
+
+
+
+    <footer>
+        <p class="texto-footer-1">Calle Bomba, 15 50010 Saratoga. Tfno. 666 666 666</p>
+        <p class="texto-footer-2">Fax: 999 999 999 Email: email@email.es</p>
+    </footer>
+
+
+
+</body>
+
+</html>
