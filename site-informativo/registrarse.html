@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/whatsapp.svg">
+    <link rel="stylesheet" href="styles.css">
+    <title>WhatsApp - Registrarse</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-principal">
+            <a href="index.html"><img src="images/whatsapp-big.svg" alt=""></a>
+        </div>
+        <div class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="documentacion.html">Documentación</a>
+            <!-- dropdown -->
+            <div class="dropdown">
+                <a class="active" href="#">Registro</a>
+                <div class="dropdown-content">
+                    <a href="iniciar-sesion.html">Iniciar sesión</a>
+                    <a href="registrarse.html">Registrarse</a>
+                </div>
+            </div>
+            <!-- dropdown -->
+            <a href="aviso-legal.html">Aviso Legal</a>
+        </div>
+    </nav>
+
+    <article class="formulario">
+        <form action="http://www.cursos-diseño.es/mostrar.php">
+            <h1>Registrarse</h1>
+
+            <div class="fila-form">
+                <div class="columna-form">
+                    Nombre
+                    <input type="text" name="nombre" required>
+                </div>
+                <br>
+                <div class="columna-form">
+                    1º apellido
+                    <input type="text" name="apellido1" required>
+                </div>
+                <br>
+                <div class="columna-form">
+                    2º apellido
+                    <input type="text" name="apellido2" required>
+                </div>
+            </div>
+            <br>
+            <div class="fila-form">
+                <div class="columna-form">
+                    Edad<input type="number" name="edad" required>
+                </div>
+                <br>
+                <div class="columna-form">
+                    NIF<input type="text" name="nif" required>
+                </div>
+            </div>
+            <br>
+            <div class="fila-form">
+                <div class="columna-form">
+                    Dirección<input type="text" name="direccion" required>
+                </div>
+            </div>
+            <br>
+            <div class="fila-form">
+                <div class="columna-form">
+                    Email<input type="email" name="mail" required>
+                </div>
+            </div>
+            <br>
+            <div class="fila-form">
+                <div class="columna-form">
+                    Teléfono<input type="text" name="telefono" required>
+                </div>
+            </div>
+            <br>
+            <label>
+                <input type="checkbox" name="acepta" value="si" required>
+                Acepto los términos, condiciones y tratamiento de datos
+            </label>
+            <br>
+            <br>
+            <div class="fila-form fila-form-text-and-submit">
+                <div class="columna-form columna70">
+                    <p>Si ya tienes una cuenta, inicia sesión <a href="iniciar-sesion.html" class="negro">aquí</a>.</p>
+                </div>
+                <div class="columna-form columna30">
+                    <input type="submit">
+                </div>
+            </div>
+        </form>
+    </article>
+
+    <footer>
+        <section class="fila-footer">
+            <div class="columna-footer socials">
+                <a href="https://x.com/whatsapp" target="_blank"><img src="images/x.png" alt=""></a>
+                <a href="https://www.youtube.com/@WhatsApp/videos" target="_blank"><img src="images/youtube.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/whatsapp/" target="_blank"><img src="images/instagram.png"
+                        alt=""></a>
+            </div>
+            <div class="columna-footer">
+                <a href="https://www.whatsapp.com/" target="_blank">Web Oficial</a>
+                <a href="https://whatsapp.com/channel/0029Va4K0PZ5a245NkngBA2M" target="_blank">Canal Oficial</a>
+                <a href="https://apps.apple.com/es/app/whatsapp-messenger/id310633997" target="_blank"><img
+                        src="images/app-store.svg" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?cat=-1&id=com.whatsapp&hl=es_419&pli=1"
+                    target="_blank"><img src="images/google-play.svg" alt=""></a>
+                <a class="descarga-directa"
+                    href="https://get.microsoft.com/installer/download/9NKSQGP7F2NH?cid=website_cta_psi">Descarga
+                    directa</a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
