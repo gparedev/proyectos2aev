@@ -17,6 +17,10 @@ body {
     margin: 0; /*body sin márgenes superiores ni inferiores*/
 }
 
+a {
+    white-space: nowrap;
+}
+
 /*NAVBAR*/
 .navbar {
     top: 0;
